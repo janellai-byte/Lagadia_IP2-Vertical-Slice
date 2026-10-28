@@ -1,6 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <Compile Remove="Features\Courses\UpdateCourse\**" />
+    <EmbeddedResource Remove="Features\Courses\UpdateCourse\**" />
+    <None Remove="Features\Courses\UpdateCourse\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
